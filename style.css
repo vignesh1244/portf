@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(243, 8, 8);
+    justify-content: center;
+    align-items: center;
+    top:0;
+    nav-index: 0;
+    position: sticky;
+    cursor: pointer;
+}
+.log img{
+    padding: 3px;
+}
+.navlist{
+    width:50%;
+    display: flex;
+    align-items: center;
+}
+.navlist li{
+    list-style: none;
+    padding: 21px;
+    
+}
+.navlist li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navlist li a:hover{
+    color: rgb(23, 250, 98);
+
+}
+.rightnav{
+    width:50%;
+    text-align: right;
+    padding: 0 3em;
+    
+    
+}
+#search{
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+
+.mainbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    max-width: 75%;
+    margin: auto;
+    height: 100vh;
+    /* display: block; */
+    /* border:2px solid white; */
+}
+
+
+.fhalf{
+    line-height: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* border:2px solid white; */
+    padding-left: 10px;
+    
+}
+.shalf{
+    /* border:2px solid white; */
+    
+}
+.shalf img{
+    
+    border-radius: 40%;
+    border: 2px solid white;
+    /* object-fit: cover; */
+    width: 100%;
+    height: 40%;
+    
+}
+.textbig{
+    font-size: 25px;
+}
+.textsmall{
+    font-size: 14px
+}
+.buttons{
+    padding-left: 30%;
+    /* align-content: center; */
+    /* align-items: center; */
+    /* justify-items: center; */
+    /* justify-content: center; */
+    /* align-items: ; */
+}
+.button{
+    padding: 3px;
+    background: none;
+    color:white;
+    margin: 7px 3px;
+    vertical-align: middle;
+    
+}
+.btn-sm{
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+
+
+.sectiondown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    /* justify-content: space-between; */
+}
+.left{
+    flex-direction: row-reverse;
+}
+.text-center p{ 
+    text-align: center;
+    padding: 30px;
+    background-color: blue;
+}
+.burgur{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top:15%;
+    cursor: pointer;
+    
+}
+.line{
+    width: 33px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    margin: 3px 3px;
+    
+}
+
+
+@media  only  screen and (max-width: 1000px) {
+    .navlist{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all .2s ease-out;
+        height: 447px;
+        top:0;
+        nav-index: 0;
+        position: sticky;
+        
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 75%;
+    }
+    .burgur{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity:  0;
+    }
+    .firstsection{
+        
+    }
+    .mainbox{
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        display: inline-block;
+        /* flex-direction: -reverse; */
+        /* position: fixed; */
+        /* position: sticky; */
+        /* position: relative; */
+        /* position: absolute; */
+        
+       
+        /* border: 2px solid white; */
+        padding-left: 10%;
+    }
+    .shalf img{
+        /* height: 10%; */
+        height: 30%;
+        width: 50%;
+        display: inline-block;
+       
+      
+    }
+    .shalf{
+        padding: 2px;
+        display: inline-block;
+        max-height: 50vh;
+        padding-left: 50px;
+    }
+        
+    
+    /* .fhalf{
+        border: 2px solid white;
+        padding-bottom: 0;
+
+    }
+    .shalf{
+        border: 2px solid white;
+        padding-top: 0;
+
+    } */
+    
+    }
+
+    .col{
+        flex-direction: column;
+    }
+    .background{
+        height: 700px;
+    }
+  
+}
