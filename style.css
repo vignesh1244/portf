@@ -7,7 +7,7 @@ body{
 }
 .navbar{
     display: flex;
-    background-color: rgb(243, 8, 8);
+    background-color: rgb(200, 162, 199);;
     justify-content: center;
     align-items: center;
     top:0;
@@ -58,6 +58,18 @@ body{
 }
 
 
+#home{
+    height: 75vh;
+    text-align: center;
+    background-color: #29C1BC;
+}
+.name{
+    justify-content: center;
+    align-content: center;
+    padding-top: 150px;
+}
+
+
 
 .mainbox{
     display: flex;
@@ -81,10 +93,7 @@ body{
     padding-left: 10px;
     
 }
-.shalf{
-    /* border:2px solid white; */
-    
-}
+
 .shalf img{
     
     border-radius: 40%;
@@ -136,7 +145,7 @@ body{
 .text-center p{ 
     text-align: center;
     padding: 30px;
-    background-color: blue;
+    background-color: rgb(146, 223, 226);
 }
 .burgur{
     display: none;
@@ -155,7 +164,7 @@ body{
 }
 
 
-@media  only  screen and (max-width: 1000px) {
+@media  only  screen and (max-width: 800px) {
     .navlist{
         flex-direction: column;
     }
@@ -183,9 +192,7 @@ body{
     .v-class-resp{
         opacity:  0;
     }
-    .firstsection{
-        
-    }
+   
     .mainbox{
         flex-direction: column;
         height: 100vh;
@@ -228,7 +235,7 @@ body{
 
     } */
     
-    }
+    
 
     .col{
         flex-direction: column;
